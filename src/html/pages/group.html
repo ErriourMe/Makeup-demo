@@ -1,0 +1,63 @@
+<% var data = {
+    title: "Композиция \"Горы в каноях\"",
+    author: "Erriour (Vladimir Gonchar)",
+    pagename: "group"
+}; %>
+<%= _.template(require('./../layouts/header.html').default)(data) %>
+
+<div class="container my-4">
+    <div class="row pt-3">
+        <div class="col-12 col-md-4 col-xl-3">
+            <div class="row galery">
+                <div class="col-12">
+                    <div class="item-image big-image border-0" style="background-image: url(/images/pictures2.png);"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 col-xl-9 mt-4 mt-md-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <h1 class="h3">Горы в каноях</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_in_group.html').default)(data) %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% var data = {
+    title: "Другие картины"
+}; %>
+<%= _.template(require('./../components/previosly.html').default)(data) %>
+
+<%= _.template(require('./../components/categories.html').default)(data) %>
+
+<% var data = {
+    title: "Последние просмотренные"
+}; %>
+<%= _.template(require('./../components/previosly.html').default)(data) %>
+
+<%= _.template(require('./../layouts/footer.html').default)(data) %>

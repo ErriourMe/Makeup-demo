@@ -1,0 +1,85 @@
+<% var data = {
+    title: "Доставка",
+    author: "Erriour (Vladimir Gonchar)",
+    pagename: "delivery"
+}; %>
+<%= _.template(require('./../layouts/header.html').default)(data) %>
+
+<div class="container mt-3 pt-3">
+    <div class="row">
+        <div class="col-12">
+            <h1>Доставка</h1>
+            <div class="mt-4">
+                <h3>Shipping Costs</h3>
+                <p>Free shipping on orders over £39. On orders under £39, we will charge a fee of £4.95.</p>
+
+                <h3>Delivery Time</h3>
+                <p>It takes 3-6 working days to deliver to the United Kingdom.</p>
+
+                <h3>Tracking</h3>
+                <p>
+                    You can track your parcel all the way from our office to your house.<br/>
+                    Search for your package with your tracking number here.
+                </p>
+
+                <h3>Shipping procedure</h3>
+                <p>Orders including only 13x18 cm posters and A4 posters are shipped by the local postal service and will be delivered in your mailbox. </p>
+
+                <p>Orders including frames or posters sized 30x40 cm or over are shipped by DB Schenker to ensure high quality, fast deliveries, with perfect tracking of your package all the way to your doorstep. </p>
+
+                <p>1. The package will initially be delivered to your door where you have to sign to receive the parcel.</p>
+
+                <p>2. If the delivery attempt to your door fails, the package will be delivered to your neighbour who can sign for it and you will receive a drop card. The drop card is put in your mailbox so you will know that your neighbour has your package. </p>
+
+                <p>3. If the delivery attempt to your neighbour also fails, the package will be dropped off at the closest post office. You will get a drop card in your mailbox notifying you where your package is awaiting pick up.</p>
+
+                <p>4. You have 16 days to pick up the package, after that time the package will be sent back to Poster Store.</p>
+
+                <p>
+                    In need of a speedy delivery? Choose DHL Express!<br/>
+                    Need a late (but great) thought of a present? Or maybe in a hurry to get these posters with matching frames up on your walls? We offer you an express delivery solution through DHL!
+                </p>
+
+                <p>All orders placed before 13.00 (GMT+1) are sent the same day and will reach you following business day. All orders placed later than 13.00 (GMT+1) will be packed and picked up from our warehouse the following business day, to be delivered next business day.</p>
+
+                <p>
+                    Choose DHL Express and enjoy their On Demand Delivery service benefits!<br/>
+                When choosing DHL Express for your parcel's delivery, you will get DHL On Demand Delivery (ODD) included! Choose whenever and wherever you want your parcel delivered:
+                </p>
+
+                <p>- Direct it to the closest DHL service points</p>
+
+                <p>- Authorize DHL to deliver the parcel without signature if you are yet not home</p>
+
+                <p>- Schedule the delivery on the best convenient date for you</p>
+
+                <p>- Request the parcel to be left at a specific neighbour</p>
+
+                <p>- Are you going on a vacation? DHL can hold the parcel up to 30 days</p>
+
+                <p>- Alternative address: work address, school, or maybe you want to direct the parcel to your summer house? All good, address changes approved within the United Kingdom.</p>
+
+                <p>Choosing a new delivery option may delay the delivery date. The updated delivery time will be visible in your ODD tracking link when you choose a new delivery solution.</p>
+
+                <p>
+                    What does DHL Express shipping cost?<br/>
+                    The express shipping delivery alternative comes with an additional fee. The sum of the fee will be connected to the weight of your order and will be shown in the checkout overview before you finalize the purchase.
+                </p>
+
+                <p>
+                    How can I track my express parcel?<br/>
+                    After placing your order you will receive an order confirmation via email. Your order will be packed and shipped with our next DHL Express pick-up. As soon as your order has been dispatched, we will activate your parcel number, after which you will receive your shipping confirmation email from us that includes your parcel's tracking link.
+                </p>
+
+                <p>Later the same day you will also receive a notification from DHL via SMS and/or email, informing you of the expected delivery date. Here, they also include a link to their On Demand Delivery service where you will find proactive information with the status of your shipment, as well as further flexible delivery options to choose from.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% var data = {
+    title: "Последние просмотренные"
+}; %>
+<%= _.template(require('./../components/previosly.html').default)(data) %>
+
+<%= _.template(require('./../layouts/footer.html').default)(data) %>

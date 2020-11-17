@@ -1,0 +1,202 @@
+<% var data = {
+    title: "Постеры",
+    author: "Erriour (Vladimir Gonchar)",
+    pagename: "category"
+}; %>
+<%= _.template(require('./../layouts/header.html').default)(data) %>
+
+<div class="background-light-blue d-md-block d-none" style="background-image: url(/images/pictures2.png);">
+    <div class="container p-5">
+        <div class="d-flex align-items-center justify-content-center p-4">
+            <div class="p-3 bg-black text-white h4 w-50 w-lg-40 w-xl-30 text-center">
+                Найдите любой постер по Вашему вкусу прямо сейчас
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="background-light-blue d-md-block d-none">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Постеры</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+
+<div class="container my-4">
+    <div class="row mt-3">
+        <div class="col-12 col-md-4 col-lg-3">
+            <div class="custom-selector p-3">
+                <h1 class="h3">Постеры</h1>
+                <div class="mt-2">
+                    <ul class="categories">
+                        <li><a href="#" class="active">Все постеры</a></li>
+                        <li><a href="#">Природа</a></li>
+                        <li><a href="#">Дети</a></li>
+                        <li><a href="#">Цветы</a></li>
+                        <li><a href="#">Кухня</a></li>
+                    </ul>
+                </div>
+                <div class="colapse collapsed" data-toggle="collapse" href="#collapseSizes" role="button" aria-expanded="false" aria-controls="collapseSizes">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <span>Размеры</span>
+                        <span class="icon icon-closed">
+                            <svg>
+                                <use xlink:href="#img-plus" fill="transparent"></use>
+                            </svg>
+                        </span>
+                        <span class="icon icon-opened">
+                            <svg>
+                                <use xlink:href="#img-minus" fill="transparent"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div id="collapseSizes" class="collapse" aria-labelledby="headingSizes" data-parent="#collapseSizes">
+                    <div class="py-1 pl-3">
+                        <ul class="categories">
+                            <li><a href="#">18x20 СМ</a></li>
+                            <li><a href="#">20x24 СМ</a></li>
+                            <li><a href="#">49510 СМ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-9 mt-n1px mt-md-0">
+            <div class="row">
+                <div class="col-12 col-md-4 pr-md-0">
+                    <div class="position-relative">
+                        <a href="#" class="custom-selector py-2 px-3 w-100 d-flex justify-content-between" type="button" id="dropdownFilterColors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Цвет</span>
+                            <span class="icon">
+                                <svg>
+                                    <use xlink:href="#img-arrow-down" fill="transparent"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu w-100 p-3" aria-labelledby="dropdownFilterColors">
+                            <div class="d-flex flex-wrap colors">
+                                <div class="color-pick" style="background-color: aqua;"></div>
+                                <div class="color-pick" style="background-color: red;"></div>
+                                <div class="color-pick" style="background-color: blue;"></div>
+                                <div class="color-pick" style="background-color: white; border: 1px solid #E4EDF9;"></div>
+                                <div class="color-pick" style="background: linear-gradient(215.71deg, #0038FF 12.27%, #E88EFF 90.71%);"></div>
+                                <div class="color-pick" style="background: linear-gradient(217.87deg, #FF0000 6.08%, #FFB800 51.22%, #0066FF 94%);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 pr-md-0 pl-md-0 mt-n1px mt-md-0 ml-md-n1px">
+                    <div class="position-relative">
+                        <a href="#" class="custom-selector py-2 px-3 w-100 d-flex justify-content-between" type="button" id="dropdownFilterColors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Стиль</span>
+                            <span class="icon">
+                                <svg>
+                                    <use xlink:href="#img-arrow-down" fill="transparent"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu w-100 p-3" aria-labelledby="dropdownFilterColors">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 pl-md-0 mt-n1px mt-md-0 ml-md-n1px">
+                    <div class="position-relative">
+                        <a href="#" class="custom-selector py-2 px-3 w-100 d-flex justify-content-between" type="button" id="dropdownFilterColors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Размер</span>
+                            <span class="icon">
+                                <svg>
+                                    <use xlink:href="#img-arrow-down" fill="transparent"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu w-100 p-3" aria-labelledby="dropdownFilterColors">
+                            <div class="from-group">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="from-control">
+                                        <span class="ml-2">44x35 СМ</span>
+                                    </div>
+                                    <div class="badge badge-light">12</div>
+                                </div>
+                            </div>
+                            <div class="from-group mt-2">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="from-control">
+                                        <span class="ml-2">64x32 СМ</span>
+                                    </div>
+                                    <div class="badge badge-light">2</div>
+                                </div>
+                            </div>
+                            <div class="from-group mt-2">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="from-control">
+                                        <span class="ml-2">44x32 СМ</span>
+                                    </div>
+                                    <div class="badge badge-light">32</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-3 mt-3">
+                    <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <a href="#" class="btn btn-light w-100">
+                        Загрузить ещё...
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../layouts/footer.html').default)(data) %>

@@ -1,0 +1,90 @@
+<% var data = {
+    title: "Ответы на вопросы",
+    author: "Erriour (Vladimir Gonchar)",
+    pagename: "faq"
+}; %>
+<%= _.template(require('./../layouts/header.html').default)(data) %>
+
+<div class="container my-4">
+    <h1>Вопрос & Ответ</h1>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="accordion" id="accordionExample">
+                <div class="custom-selector mb-3">
+                  <div class="p-3" id="heading1">
+                    <h5 class="mb-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Разворачиваемая панель #1
+                            </button>
+                            <span class="icon-big" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                <svg  viewBox="0 0 11 11">
+                                    <use xlink:href="#img-plus" fill="transparent"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </h5>
+                  </div>
+              
+                  <div id="collapse1" class="collapse show px-3 pb-3 pt-0" aria-labelledby="heading1" data-parent="#accordionExample">
+                    <div>
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-selector mb-3">
+                    <div class="p-3" id="heading2">
+                        <h5 class="mb-0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Разворачиваемая панель #2
+                                </button>
+                                <span class="icon-big collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    <svg  viewBox="0 0 11 11">
+                                        <use xlink:href="#img-plus" fill="transparent"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </h5>
+                    </div>
+                
+                    <div id="collapse2" class="collapse px-3 pb-3 pt-0" aria-labelledby="heading2" data-parent="#accordionExample">
+                        <div>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-selector mb-3">
+                    <div class="p-3" id="heading3">
+                        <h5 class="mb-0">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    Разворачиваемая панель #3
+                                </button>
+                                <span class="icon-big collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    <svg  viewBox="0 0 11 11">
+                                        <use xlink:href="#img-plus" fill="transparent"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </h5>
+                    </div>
+                
+                    <div id="collapse3" class="collapse px-3 pb-3 pt-0" aria-labelledby="heading3" data-parent="#accordionExample">
+                        <div>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+        </div>
+    </div>
+</div>
+
+<% var data = {
+    title: "Последние просмотренные"
+}; %>
+<%= _.template(require('./../components/previosly.html').default)(data) %>
+
+<%= _.template(require('./../layouts/footer.html').default)(data) %>

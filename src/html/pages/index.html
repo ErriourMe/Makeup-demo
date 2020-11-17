@@ -1,0 +1,153 @@
+<% var data = {
+    title: "Главная",
+    author: "Erriour (Vladimir Gonchar)",
+    pagename: "index"
+}; %>
+<%= _.template(require('./../layouts/header.html').default)(data) %>
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-12 my-2">
+            <div class="slider-carousel owl-carousel">
+                <div class="slide slide-1" style="background-image: url(/images/pictures2.png);">
+                    <div class="ml-3 p-5 h-100 d-inline-flex flex-column justify-content-center">
+                        <div class="title text-white">
+                            Укрась свою комнату<br />легко и просто<br />эстетичными картинами
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-white text-uppercase mt-4">Поиск</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-1" style="background-image: url(/images/pictures2.png);">
+                    <div class="ml-3 p-5 h-100 d-inline-flex flex-column justify-content-center">
+                        <div class="title text-white">
+                            Укрась свою комнату<br />легко и просто<br />эстетичными картинами
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-white text-uppercase mt-4">Поиск</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 bestsellers">
+            <h2 class="text-center">Лучшие настенные картины</h2>
+            <div class="d-flex justify-content-center align-items-center categories mb-4">
+                <span class="btn btn-round subtitle">Бестселлеры</span>
+            </div>
+            <div class="d-flex justify-content-xl-center align-items-center my-4 pt-2 pb-4 pb-xl-0 overflow-xscroll">
+                <%= _.template(require('./../components/good.html').default)(data) %>
+                <%= _.template(require('./../components/good.html').default)(data) %>
+                <%= _.template(require('./../components/good_sell.html').default)(data) %>
+                <%= _.template(require('./../components/good.html').default)(data) %>
+                <%= _.template(require('./../components/good.html').default)(data) %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="background-light-blue pt-5 mb-5">
+    <div class="row mx-0">
+        <div class="col-12">
+            <h2 class="text-center">Готовые композиции</h2>
+            <div class="d-flex justify-content-center align-items-center categories mb-4">
+                <span class="btn btn-round subtitle">Специально подобраны для вас</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mx-0">
+        <div class="col-12 px-md-0 d-flex align-items-center justify-content-center position-relative smooth-block">
+            <div class="packs-carousel owl-carousel">
+                <div class="pack pack-1" onclick="location='/category';">
+                    <div class="pack-image" style="background-image: url(/images/pictures2.png);"></div>
+                    <div>
+                        <div class="item-title mt-2 mb-1">Композиция "Песчанный бриз"</div>
+                        <div class="category text-blue">
+                            <span class="icon">
+                                <svg>
+                                    <use xlink:href="#img-folder" fill="transparent"></use>
+                                </svg>
+                            </span>
+                            <span>Картин в наборе: 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pack pack-2" onclick="location='/category';">
+                    <div class="pack-image" style="background-image: url(/images/pictures2.png);"></div>
+                    <div>
+                        <div class="item-title mt-2 mb-1">Композиция "Песчанный шторм"</div>
+                        <div class="category text-blue">
+                            <span class="icon">
+                                <svg>
+                                    <use xlink:href="#img-folder" fill="transparent"></use>
+                                </svg>
+                            </span>
+                            <span>Картин в наборе: 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container about">
+    <div class="row pt-3">
+        <div class="col-12 col-md-6">
+            <div class="icon mb-2">
+                <svg>
+                    <use xlink:href="#img-camera" fill="transparent"></use>
+                </svg>
+            </div>
+            <h4>ELEGANT POSTERS FOR ALL ROOMS</h4>
+            <div>
+                At Poster Store you can shop wall art and beautiful prints online. Our collection is filled with stunning artwork ranging from maps of Stockholm and New York to fashion posters and gorgeous photography prints. Our art prints are inspired by Scandinavian design, and fit well in many different homes and interior design styles. Choose between our fashion and kitchen posters, nature inspired wall art, modern art, photography and much more. Discover our stunning Selection posters too, by talented artists like Tove Frank, Vee Speers and Love Warriors.
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mt-4 mt-md-0">
+            <div class="icon mb-2">
+                <svg>
+                    <use xlink:href="#img-lab" fill="transparent"></use>
+                </svg>
+            </div>
+            <h4>FRAME YOUR POSTERS AND CREATE CUSTOM DESIGN WALL ART</h4>
+            <div>
+                When framing posters you are able to create personalised arrangements. Find the perfect mix of frames and posters to capture the exact right feeling in your unique gallery wall. We offer both large and small frames, and posters in a diverse range of styles and designs. We have colourful and black and white posters, shiny golden, silver and copper frames as well as natural oak, walnut, white and black wooden frames. Freshen up your walls with a world map, or why not choose a beautiful photograph of a Bengal Tiger framed in a wooden frame? At Poster Store you will find cheap, high quality wall art that will fulfill all your interior design wishes and transform your room into the ultimate personal sanctuary.
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4 pt-3">
+        <div class="col-12 col-md-6">
+            <div class="icon mb-2">
+                <svg>
+                    <use xlink:href="#img-cog" fill="transparent"></use>
+                </svg>
+            </div>
+            <h4>WALL ART IN DIFFERENT SIZES FOR YOUR GALLERY WALL</h4>
+            <div>
+                We are extremely passionate about interior design and enjoy providing you with tips and tricks to create the perfect gallery wall. A simple interior design tip is to combine small and large prints with each other to create a custom gallery or photo wall. We offer posters in a wide range of sizes: 13x18 cm (5.1” x 7.1”), A4 (8.3” x 11.8”), 30x40 cm (11.8” x 15.7”), 40x50 cm (15.7” x 19.7”), 50x50 cm (19.7” x 19.7”), 50x70 cm (19.7” x 27.6”) and 70x100 cm (27.6” x 39.4”). We have developed an extensive guide in which we have collected our best tips. Additionally, we have also created templates for stylish gallery wall arrangements so you can easily create a stunning photo wall. Take a look at our inspiration page with real-life examples of our creative customers' homes. Don't forget to check out our best-selling posters and new print sections either. 
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mt-4 mt-md-0">
+            <div class="icon mb-2">
+                <svg>
+                    <use xlink:href="#img-donut" fill="transparent"></use>
+                </svg>
+            </div>
+            <h4>DISCOVER OUR STYLISH FRAMES</h4>
+            <div>
+                If you are looking for beautiful picture frames online, you've come to the right place. Our wide range of large and small frames are specifically designed for posters, enabling you to create the most stylish wall art. We have black, white, walnut coloured and natural oak wooden frames - as well as stunningly shiny golden, silver and copper metal frames made of lightweight aluminium for easy suspension. All picture frames can be hung up both vertically and horizontally. They meet high quality standards and can be easily opened on the back. You can trust that we have wall art perfect for all the rooms in your house. Buy cheap, beautiful posters and frames for your living room, nursery, hallway, bedroom and the kitchen online at Poster Store.
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= _.template(require('./../components/categories.html').default)(data) %>
+
+<%= _.template(require('./../layouts/footer.html').default)(data) %>
